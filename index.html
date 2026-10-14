@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#07111b">
+  <title>قفزة الظل — عالم الباركور 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loading">جارٍ تحميل العالم ثلاثي الأبعاد…</div>
+  <div id="game">
+    <div class="topbar">
+      <div class="brand"><span class="brand-dot"></span><div><b>قفزة الظل</b><small>عالم الباركور 3D</small></div></div>
+      <div class="stats"><span>🏁 <b id="checkpoint">0 / 5</b></span><span>⏱ <b id="timer">00:00</b></span></div>
+      <button id="reset" class="icon-btn" aria-label="إعادة البداية">↻</button>
+    </div>
+    <div class="mission"><b>التحدي الأول</b><span>اقفز بين المنصات واصل إلى البوابة الزرقاء!</span></div>
+    <div id="toast"></div>
+    <div class="mobile-controls">
+      <div id="joystick" aria-label="عصا الحركة"><div id="stick"></div></div>
+      <div id="camera-hint">اسحب الشاشة لتدوير الكاميرا</div>
+      <button id="jump" aria-label="قفز"><span>↑</span><small>قفز</small></button>
+    </div>
+    <div class="help">WASD / الأسهم للحركة · Space للقفز · اسحب لتدوير الكاميرا</div>
+    <div id="win" class="overlay hidden">
+      <div class="win-card"><div class="trophy">🏆</div><h1>أحسنت! وصلت للنهاية</h1><p>أنهيت التحدي الأول بنجاح.</p><button id="play-again">العب مرة أخرى</button></div>
+    </div>
+  </div>
+  <script type="module" src="game.js"></script>
+</body>
+</html>
